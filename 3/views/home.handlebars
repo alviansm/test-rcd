@@ -1,0 +1,11 @@
+{{#if msg}}
+<p>{{msg}}</p>
+{{else}}
+<p>Kirim Pesan</p>
+{{/if}}
+<form method="POST" action="send">
+    <label for="sender">Sender:</label>
+    <input type="text" name="sender" placeholder="John Doe">
+    <button type="email">Submit</button>
+</form>
+<p>Klik tombol submit untuk menuliskan <code>[SENDER NAME] has just sent an email</code> ke /application/cache/writeme.txt</p>

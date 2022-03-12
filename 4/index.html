@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="alviansmaulana">
+    
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <p>Test Me</p>
+    <div id="testme">
+        <ul class="list">
+            <li>kambing</li>
+            <li>kucing</li>
+            <li>kelinci</li>
+        </ul>
+    </div>
+    <p>Test You</p>
+    <div id="testyou">
+        <ul class="list">
+            <li>ketumbar</li>
+            <li>sirih</li>
+            <li>lada</li>
+        </ul>
+    </div>
+    <button class="btn-remove">Remove #testme</button>
+    <a href="./index.html">Refesh</a>
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        const btn = document.querySelector(".btn-remove");
+        btn.addEventListener("click", () => {
+            $("#testme").remove();
+        });
+    </script>
+</body>
+</html>
